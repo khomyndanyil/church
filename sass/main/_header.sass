@@ -1,0 +1,233 @@
+header
+    border-bottom: 2px solid #efefef
+    width: 100%
+    box-sizing: border-box
+.navbar
+    display: flex
+    align-items: center
+    height: 87px
+    width: 100%
+    &-menu
+        display: flex
+        align-items: center
+    &-logo
+        a
+            display: flex
+            align-items: center
+            margin-right: 25px
+            font-family: Open sans
+            font-size: 20px
+            font-weight: 900
+        img
+            height: 45px
+            width: 45px
+        &__title
+            font-family: Open sans
+            font-size: 19px
+            font-weight: 900
+            margin-left: 17px
+            color: #1f1f1f
+            text-decoration: none
+    &-block
+        display: flex
+        justify-content: space-between
+        width: 100%
+        &__link
+            display: flex
+            &_item
+                position: relative
+                font-family: Open sans
+                font-weight: 600
+                display: flex
+                font-size: 15px
+                height: 100%
+                align-items: center
+                color: #000 
+                text-decoration: none
+                transition: .3s
+                &::after
+                    content: '\f107'
+                    font-family: FontAwesome
+                    display: inline-block
+                    font-size: 13px
+                    color: #000
+                    margin-left: 7px
+                    margin-top: 3px
+                    transition: .5s
+                &_active
+                    color: $white
+                    &::after
+                        color: $white
+        &__other
+            display: flex
+            align-items: center
+            &_search
+                margin: 0 20px
+                i
+                    transition: .3s
+                    font-size: 21px
+                    cursor: pointer
+                    &:hover
+                        color: #ff9044
+            &_bag
+                position: relative
+                cursor: pointer
+                transition: .3s
+                &:hover
+                    i
+                        color: #ff9044
+                i
+                    font-size: 21px 
+                span
+                    position: absolute
+                    font-family: Open sans
+                    font-size: 10px
+                    font-weight: 600
+                    width: 20px
+                    height: 20px
+                    border-radius: 50%
+                    background-color: $main-color
+                    right: -12px
+                    padding-top: 3px
+                    box-sizing: border-box
+                    text-align: center
+                    top: -2px
+                    color: $white
+
+.sub-menu
+    &-list
+        position: absolute
+        display: none
+        flex-direction: column
+        top: 100%
+        align-items: flex-start
+        left: 0px
+        z-index: 999
+        background: #fff
+        min-width: 150px
+    &-link
+        width: 100% 
+        a
+            display: flex
+            padding: 20px 20px 20px 15px
+            height: 100%
+            width: 100%
+            font-size: 14px
+            box-shadow: 0 0px 3px $grey
+            box-sizing: border-box
+            color: $grey
+            font-family: 'Open Sans'
+            transition: .3s
+            &:hover
+                background-color: #A9A9A9
+.sub-sub_menu
+    &_list
+        position: absolute
+        display: none
+        flex-direction: column
+        top: 0
+        align-items: flex-start
+        left: 100%
+        z-index: 999
+        background: #fff
+        min-width: 150px
+    &_link
+        width: 100%
+        a
+            display: flex
+            padding: 20px 20px 20px 15px
+            height: 100%
+            width: 100%
+            box-shadow: 0 0px 3px $grey
+            box-sizing: border-box
+            color: $grey
+            transition: .3s
+            font-family: 'Open Sans'
+            &:hover
+                background-color: #A9A9A9
+            
+.add
+    &-menu
+        position: relative
+        &__arrow
+            &::after
+                content: '\f107'
+                font-family: FontAwesome
+                display: inline-block
+                font-size: 13px
+                color: #000
+                margin-left: 7px
+                margin-top: 3px
+                transition: .5s
+        &:hover
+            .add-menu__arrow
+                color: $main-color
+                &::after
+                    color: $main-color
+                    transform: rotate(-90deg)
+.menu
+    &-list   
+        display: flex
+        align-items: center
+        min-height: 87px
+    &-link
+        position: relative
+        height: 100%
+        display: flex
+        align-items: center
+        margin-right: 30px
+        transition: .3s all
+        &:hover
+            .navbar-block__link_item 
+                &::after
+                    transform: rotate(180deg)
+                    color: $main-color
+.navbar-block__link_item
+    &:last-child
+        &::after
+            display: none 
+.menu-link:hover .sub-menu-list
+    display: flex
+.add-menu:hover .sub-sub_menu_list
+    display: flex
+.menu-link:hover .navbar-block__link_item
+    color: $main-color
+.hamburger
+    display: none
+.menu-fade
+    visibility: visible
+    opacity: 1
+    position: sticky
+    top: 0
+    left: 0
+    width: 100%
+    background-color: #000
+    z-index: 999
+    transition: 1s all
+    h1
+        color: $white
+    i
+        color: $white
+.white
+    color: $white
+    &::after
+        color: $white
+.black
+    color: #000
+    &::after
+        color: #000
+.without-submenu
+    &::after
+        display: none
+
+
+
+
+
+
+
+
+
+
+
+                            

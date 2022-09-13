@@ -1,0 +1,267 @@
+.shop
+    padding: 100px 0
+    &__subtitle
+        display: block
+        font-family: "La Belle Aurore", cursive
+        font-size: 22px
+        font-weight: 600
+        color: $main-color
+        text-align: center
+        margin-bottom: 5px
+    &__title
+        font-family: Open Sans
+        font-size: 50px
+        font-weight: 700
+        color: black
+        text-align: center
+        margin-bottom: 15px
+        span
+            color: $main-color
+    &-block
+        display: flex
+        justify-content: space-between
+        margin-top: 50px
+    &-main
+        width: 65%
+        &__inf
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-bottom: 30px
+            padding: 20px
+            border: 1px solid #F0F2F3
+            background-color: #fff
+            box-shadow: 0 3px 24px rgb(0 0 0 / 4%)
+            p
+                font-family: Open Sans
+                font-size: 14px
+                color: $grey
+                line-height: 1.8
+                span
+                    font-weight: 700
+            form
+                position: relative
+                &::after
+                    position: absolute
+                    display: block
+                    top: 50%
+                    transform: translateY(-50%)
+                    right:20px
+                    content: ''
+                    width: 10px
+                    height: 10px
+                    background: url('../../icons/select.svg') center center/cover  no-repeat
+            &_select
+                height: 50px
+                padding: 8px 15px
+                border-radius: 0
+                border: 1px solid #F0F2F3
+                border-radius: 0
+                width: 100%
+                color: #6e6e6e
+                background-color: #fff
+                letter-spacing: 0.1px
+                font-size: 14px    
+                outline: none
+                -webkit-appearance: none
+            &_catalog
+                display: flex
+                flex-wrap: wrap
+                justify-content: space-between
+                width: 100%
+            &_item 
+                width: 45%
+                background-color: #fff
+                border: 1px solid #F0F2F3
+                box-shadow: 0 3px 24px rgb(0 0 0 / 4%)
+                margin-bottom: 30px
+                overflow: hidden
+                &_img
+                    width: 100%
+                    img
+                        display: block
+                        width: 100%
+                        height: auto 
+                        transition: .3s all 
+                    &:hover
+                        img
+                            transform: scale(1.1) rotate(3deg)
+                &_title 
+                    font-family: 'Open Sans', serif
+                    font-weight: 700
+                    color: #1f1f1f
+                    font-size: 20px
+                    line-height: 1.5
+                    transition: .3s
+                    margin-bottom: 15px
+                    &:hover
+                        color: $main-color
+                &_text
+                    font-family: 'Open Sans', serif
+                    font-size: 14px
+                    line-height: 1.8
+                    margin-bottom: 15px
+                    color: #838383
+            &_text
+                padding: 20px   
+            &_rating
+                display: flex
+                justify-content: space-between
+                align-items: center
+                &_star
+                    display: flex 
+                    i
+                        margin-right: 5px
+                        font-size: 12px
+                        color: $grey 
+                span
+                    font-family: 'Open Sans', serif
+                    font-size: 13px
+                    color: #838383
+                    font-weight: 600
+            &_order
+                display: flex
+                justify-content: space-between
+                align-items: center
+                margin-top: 30px
+                padding-top: 20px
+                border-top: 1px solid #F0F2F3
+    &-aside
+        width: 30%
+        &__block
+            padding: 25px 28px
+            box-shadow: rgb(0 0 0 / 5%) 0px 8px 10px
+            background-color: #fff
+            border: 1px solid #f2f2f2
+            margin-top: 30px
+            &:first-child
+                margin-top: 0
+            &_title
+                font-family: 'Open Sans', serif
+                position: relative
+                font-weight: 700
+                margin-bottom: 30px
+                font-size: 18px
+                color: #1f1f1f
+                line-height: 1.7
+                &::before
+                    content: ""
+                    position: absolute
+                    left: -28px
+                    top: 0
+                    height: 100%
+                    background-color: #ff9044
+                    width: 5px
+            form
+                position: relative
+                display: flex
+                width: 100%
+                input
+                    height: 50px
+                    padding: 8px 15px
+                    border-radius: 0
+                    border: 1px solid #F0F2F3
+                    border-radius: 0
+                    box-sizing: border-box
+                    width: 100%
+                    color: #6e6e6e
+                    background-color: #fff
+                    letter-spacing: 0.1px
+                    font-size: 14px
+                    outline: none
+                button
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    width: 50px
+                    height: 50px
+                    border: none
+                    background-color: $main-color
+                    cursor: pointer
+                    transition: .3s
+                    &:hover
+                        box-shadow: 0 3px 23px #696969
+                    i
+                        color: $white
+                        font-size: 14px
+            &_checkbox
+                li
+                    margin-top: 20px
+                    position: relative
+                    padding-left: 15px
+                    &:first-child
+                        margin-top: 0
+                &_item
+                    appearance: none
+                    position: absolute
+                &_label
+                    font-family: 'Open Sans', serif
+                    font-weight: 400
+                    font-size: 14px
+                    color: #1f1f1f
+                    padding-left: 15px
+                    cursor: pointer
+                    &::before
+                        content: ''
+                        position: absolute
+                        display: block
+                        width: 16px
+                        height: 16px
+                        background-color: #dee2e6
+                        left: 0
+                        z-index: 1
+                        top: 0
+                        transition: .3s all
+                    &::after
+                        content: ''
+                        position: absolute
+                        display: block
+                        width: 16px
+                        opacity: 0
+                        height: 16px
+                        left: 0
+                        background: url('../icons/check-solid.svg') center center/cover no-repeat
+                        background-size: 14px 14px 
+                        z-index: 2
+                        top: 0
+                        transition: .3s all
+    &-pagination
+        margin: 30px auto 0 auto
+                        
+i.star_active
+    color: $main-color
+.price_now
+    display: block
+    margin-bottom: 3px
+    font-size: 18px
+    line-height: 1.2
+    font-family: "Open Sans", sans-serif
+    color: #1f1f1f
+    font-weight: 700
+.price_old
+    display: block
+    font-size: 14px
+    font-family: "Open Sans", sans-serif
+    color: #ff9044
+    font-weight: 700
+    text-decoration: line-through
+.catalog_btn
+    min-height: 40px
+    a
+        padding: 12px 20px
+
+.shop-aside__block_checkbox_item:checked + .shop-aside__block_checkbox_label:before
+    background-color: $main-color
+.shop-aside__block_checkbox_item:checked + .shop-aside__block_checkbox_label:after
+    opacity: 1
+.delievery__text
+    margin: 40px auto
+    span
+        font-weight: 600
+        color: $main-color
+.delievery__photo
+    width: 600px
+    margin: 0 auto
+    img
+        width: 100%
+        height: auto

@@ -1,0 +1,175 @@
+.modal
+    opacity: 0
+    visibility: hidden
+    position: fixed
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    background: rgba(0, 0, 0, 0.7)
+    z-index: 1000
+    transition: .5s all
+    &_active
+        opacity: 1
+        visibility: visible
+    &-item
+        position: absolute
+        background: url('../../img/flag of UKRAINE.png') center center/cover no-repeat 
+        max-width: 500px
+        top: 50%
+        left: 50%
+        transform: translateX(-50%) translateY(-50%)
+        padding: 70px 40px 40px 40px
+        box-sizing: content-box
+        i
+            position: absolute
+            right: 15px
+            top: 15px
+            font-size: 50px
+            color: #000
+            transition: .3s
+            cursor: pointer
+            &:hover
+                color: $main-color
+        &__title
+            position: relative
+            font-family: 'Open Sans',sans-serif
+            font-size: 30px
+            text-align: center
+            font-weight: 700
+            color: $white
+            margin-bottom: 30px
+            &::after
+                content: ''
+                position: absolute
+                bottom: -12px
+                left: 0
+                width: 100%
+                height: 4px
+                background-color: $main-color
+        &__subtitle
+            font-family: 'Open Sans',sans-serif
+            font-size: 20px
+            color: $main-color
+            text-align: center
+            margin-top: 30px
+        &__text
+            margin: 15px 0
+            text-align: center
+            font-family: 'Open Sans',sans-serif
+            font-size: 15px
+            color: #000
+            text-align: center
+            span
+                color: $main-color
+        &__descr
+            margin-bottom: 20px
+            text-transform: uppercase
+            font-family: 'Open Sans',sans-serif
+            font-size: 15px
+            color: #000
+            text-align: center
+    &-shop
+        top: 0
+        display: block
+        visibility: hidden
+        position: fixed
+        height: 100%
+        width: 100%
+        z-index: 999
+        background: rgba(0, 0, 0, 0.7)
+        &__active
+            visibility: visible
+        &__block
+            position: absolute
+            top: 0
+            right:  -100%
+            visibility: hidden
+            width: 40%
+            height: 100%
+            background-color: $white
+            z-index: 1000
+            padding: 40px
+            transition: .5s all
+            box-sizing: border-box
+            &__active
+                right:  0
+                visibility: visible
+        &__main
+            display: flex
+            justify-content: space-between
+            width: 100%
+            margin-bottom: 40px
+            align-items: center
+            h2
+                font-family: 'Open Sans', serif
+                font-weight: 700
+                font-size: 26px
+                line-height: 1.4
+                color: #1f1f1f
+            &_close
+                i
+                    font-size: 30px
+                    color: #1f1f1f
+                    cursor: pointer
+                    transition: .3s
+                    &:hover
+                        color: $main-color
+        &__list
+            height: calc(100% - 245px)
+            overflow-y: auto
+            &_item
+                display: flex
+                justify-content: space-between
+                border-bottom: 2px dashed #9F9E9E
+                padding: 40px 20px
+            &_main
+                display: flex
+                align-items: center
+                img
+                    width: 90px
+                    height: auto
+                    margin-right: 15px
+                &_title
+                    font-family: 'Open Sans', serif
+                    font-weight: 600
+                    font-size: 20px
+                    line-height: 1.5
+                    color: #1f1f1f
+                    transition: .3s
+                    &:hover
+                        color: $main-color
+            &_price
+                font-family: 'Open Sans', serif
+                font-weight: 400
+                font-size: 15px
+                line-height: 1.5
+                color: $grey
+                align-self: center
+            &_close
+                align-self: center
+                i
+                    font-size: 20px
+                    color: $grey
+                    cursor: pointer
+                    transition: .3s
+                    &:hover
+                        color: $main-color
+        &__footer
+            padding: 40px 0
+            display: flex
+            justify-content: space-between
+            align-items: center
+            &_title
+                font-family: 'Open Sans', serif
+                font-weight: 700
+                font-size: 20px
+                color: #1f1f1f
+                span
+                    margin-left: 10px
+                    font-size: 28px
+
+
+
+
+

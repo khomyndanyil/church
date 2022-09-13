@@ -1,0 +1,182 @@
+.shop-open
+    padding: 100px 0
+    &__img
+        display: flex
+        justify-content: center
+    &__rating
+        justify-content: flex-start
+        span
+            margin-left: 15px
+    &__title
+        font-family: 'Open Sans', serif
+        font-weight: 700
+        color: #1f1f1f
+        font-size: 30px
+        line-height: 1.5
+        transition: .3s
+        margin-bottom: 15px
+    &__text
+        margin: 30px 0
+    &__price
+        margin-top: 20px
+        flex-direction: row
+        display: flex
+        align-items: center
+        &_old
+            font-size: 23px
+            margin-right: 10px
+        &_new
+            font-size: 25px
+    &__details
+        display: flex
+        align-items: center
+    &__amount
+        margin-right: 15px
+        display: flex
+        &_minus
+            display: flex
+            justify-content: center
+            align-items: center
+            border: 1px solid #F0F2F3
+            font-size: 13px
+            background-color: #fff
+            transition: .3s
+            width: 40px
+            height: 40px
+            cursor: pointer
+            &:hover
+                background-color: #F0F2F3
+        &_plus
+            display: flex
+            justify-content: center
+            align-items: center
+            border: 1px solid #F0F2F3
+            font-size: 13px
+            background-color: #fff
+            transition: .3s
+            width: 40px
+            height: 40px
+            cursor: pointer
+            &:hover
+                background-color: #F0F2F3
+        &_change
+            background-color: #fff
+            outline: none
+            width: 50px
+            height: 40px
+            text-align: center
+            font-weight: 600
+            border: 1px solid #F0F2F3
+            &_error
+                border: 1px solid red
+    &__inf
+        margin-top: 60px
+        display: flex
+        justify-content: space-between
+    &__tabs
+        width: 40%
+        margin-right: 5px
+    &__tab
+        font-family: 'Open Sans', serif
+        width: 100%
+        background-color: #F0F2F3
+        padding: 20px 10px
+        font-weight: 600
+        color: #1f1f1f
+        margin-top: 15px
+        font-size: 14px
+        cursor: pointer
+        box-sizing: border-box
+        &:first-child
+            margin-top: 0
+        &_active
+            background-color: $main-color
+            color: $white
+            transition: .4s all
+    &__modals
+        width: 55%
+    &__modal
+        top: 0
+        padding: 40px
+        box-shadow: rgb(0 0 0 / 5%) 0px 8px 10px
+        background-color: #fff
+        border: 1px solid #f2f2f2
+        &_hide
+            opacity: 0
+            visibility: hidden
+            transition: .4s all
+        &_show
+            opacity: 1
+            visibility: visible
+            transition: .4s all
+        &_title
+            font-family: 'Open Sans', serif
+            font-weight: 700
+            color: #1f1f1f
+            font-size: 26px
+            line-height: 1.5
+            margin-bottom: 15px
+        &_text
+        &_inputs
+            margin-top: 30px
+            display: flex
+            width: 100%
+            justify-content: space-between
+            input
+                height: 50px
+                padding: 8px 15px
+                border: 1px solid #F0F2F3
+                border-radius: 0
+                width: 45%
+                color: #6e6e6e
+                background-color: #fff
+                letter-spacing: 0.1px
+                font-size: 14px
+                outline: none
+        &_review
+            margin: 30px 0
+            padding: 8px 15px
+            border-radius: 0
+            border: 1px solid #F0F2F3
+            border-radius: 0
+            width: 100%
+            color: #6e6e6e
+            background-color: #fff
+            letter-spacing: 0.1px
+            font-size: 14px
+            resize: none
+            outline: none
+            &_btn
+                margin: 0 auto
+    &__comments
+        margin-top: 50px
+    &__comment
+        display: flex
+        margin-top: 30px
+        &:first-child
+            margin-top: 0
+        img
+            width: auto
+            height: 65px
+            margin-right: 20px
+            border-radius: 50%
+        &_main
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-bottom: 15px
+            h4
+                font-family: 'Open Sans', serif
+                font-weight: 700
+                color: #1f1f1f
+                font-size: 16px
+                line-height: 1.5
+            span
+                font-family: 'Open Sans', serif
+                color: #848486
+                font-size: 13px
+                line-height: 21px
+        &_star
+            margin-bottom: 15px
+
+            

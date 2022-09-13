@@ -1,0 +1,59 @@
+.modal
+    &-search
+        top: 0
+        display: none
+        position: fixed
+        height: 100%
+        width: 100%
+        z-index: 1000
+        background: rgba(0, 0, 0, 0.7)
+        &_active
+            display: block
+        form
+            margin: 0 auto
+            position: relative
+            top: 50%
+            transform: translateY(-50%)
+            width: 70%
+            input
+                width: 100%
+                background-color: transparent
+                border: 0
+                border-bottom: 2px solid #fff
+                color: white
+                font-size: 40px
+                padding: 20px 0
+                outline: none
+                padding: 20px 20px 
+                box-sizing: border-box
+            i
+                top: 50%
+                transform: translateY(-50%)
+                position: absolute
+                font-size: 30px
+                right: 0
+                cursor: pointer
+                color: $white
+                transition: .3s
+                &:hover
+                    color: $main-color
+        &_close
+            position: absolute
+            top: 60px
+            right: 60px
+            cursor: pointer
+            i
+                font-size: 50px
+                color: $white
+                transition: .3s
+                &:hover
+                    color: $main-color
+
+                        
+
+                    
+                
+
+                    
+
+                

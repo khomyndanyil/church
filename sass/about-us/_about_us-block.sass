@@ -1,0 +1,191 @@
+.about_us-block
+    padding: 110px 0
+    &__icon
+        margin: 60px auto 0 auto
+        width: 700px
+        height: 450px
+        position: relative
+        img
+            width: 100%
+            height: 100%
+    iframe
+        margin: 50px auto 0 auto
+        width: 100%
+.about-us
+    padding: 100px 0
+    &__block
+        display: flex
+        margin-top: 30px
+        justify-content: space-between
+    &__main
+        width: 65% 
+        &_background
+            width: 100%
+            height: auto
+            margin-bottom: 30px
+            img
+                width: 100%
+        &_title
+            margin: 0 0 20px
+            font-family: 'Open Sans', serif
+            font-weight: 700
+            line-height: 1.2
+            color: #1f1f1f
+            font-size: 42px
+        &_subtitle
+            font-family: 'Open Sans', serif
+            font-weight: 700
+            line-height: 1.2
+            color: #1f1f1f
+            font-size: 26px
+        &_author
+            display: flex
+            align-items: center
+            &_title
+                font-family: 'Open Sans', serif
+                font-weight: 600
+                line-height: 1.2
+                color: #1f1f1f
+                font-size: 14px
+                span
+                    color: $main-color
+            img
+                width: 45px
+                border-radius: 50%
+                margin-right: 10px
+        &_text
+            font-family: 'Open Sans', serif
+            font-weight: 400
+            font-size: 14px
+            margin: 20px 0
+            color: $grey
+            line-height: 1.8
+            span
+                font-weight: 700
+        &_quote
+            display: flex
+            i
+                font-size: 30px
+                color: $main-color
+                margin-right: 20px
+            &_text
+                font-family: 'Open Sans', serif
+                font-weight: 600
+                line-height: 1.2
+                color: #1f1f1f
+                font-size: 16px
+                span
+                    display: block
+                    margin-top: 5px
+                    color: $main-color
+        &_photo
+            img
+                width: 100%
+        &_img
+            margin-top: 20px 
+            display: flex
+            justify-content: space-between
+            img
+                width: 45%
+        
+    &__sidepanel
+        width: 30%
+        &_author
+            padding: 25px 28px
+            box-shadow: rgb(0 0 0 / 5%) 0px 8px 10px
+            background-color: $white
+            border: 1px solid #f2f2f2
+            &_icon
+                width: 100%
+                margin-bottom: 20px 
+                justify-content: center
+                display: flex
+                img
+                    width: 100px
+                    border-radius: 100%
+            &_title
+                text-align: center
+                font-family: 'Open Sans', serif
+                font-weight: 700
+                font-size: 20px
+                color: #1f1f1f
+                line-height: 1.5
+            &_descr
+                text-align: center
+                font-family: 'Open Sans', serif
+                font-size: 14px
+                line-height: 1.8
+                color: #838383
+        &_recent
+            margin-top: 30px
+            padding: 25px 28px
+            box-shadow: rgb(0 0 0 / 5%) 0px 8px 10px
+            border: 1px solid #f2f2f2
+            background-color: $white
+            &_title
+                position: relative
+                font-family: 'Open Sans', serif
+                font-size: 18px
+                color: #1f1f1f
+                font-weight: 700
+                margin-bottom: 30px
+                &::before
+                    content: ''
+                    position: absolute
+                    height: 100%
+                    width: 5px
+                    background-color: $main-color
+                    top: 0
+                    left: -28px
+        &_box
+            display: flex
+            margin-bottom: 30px
+            &:last-child
+                margin-bottom: 0
+            &_img
+                width: 100px
+                margin-right: 10px
+                transition: .3s
+                overflow: hidden
+                img
+                    width: 100%
+                    height: auto
+                    transition: .3s all
+                &:hover
+                    img
+                        transform: scale(1.2)
+            &_block
+                display: flex
+                flex-direction: column
+            &_text
+                font-family: 'Open Sans', serif
+                margin-bottom: 6px
+                color: #1f1f1f
+                font-weight: 700
+                font-size: 15px
+                line-height: 1.5
+                transition: .3s
+                &:hover
+                    color: $main-color
+            &_date
+                display: block
+    &__title
+        display: block
+        font-family: "La Belle Aurore", cursive
+        font-size: 22px
+        font-weight: 600
+        color: $main-color
+        text-align: center
+        margin-bottom: 5px
+    &__subtitle
+        font-family: Open Sans
+        font-size: 50px
+        font-weight: 700
+        color: black
+        text-align: center
+        margin-bottom: 15px
+    &__gallery
+        padding-bottom: 100px
+.contact-you
+    background: rgba(240,242,243,.5490196078)
+

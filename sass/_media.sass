@@ -1,0 +1,552 @@
+@media (max-width:1399px)
+    .modal-shop__block
+        width: 50%
+@media (max-width:1199px)
+    .hamburger
+        display: flex
+    .navbar-block__link_item_active
+        color: #000
+        &::after
+            color: #000
+    .container
+        padding: 0 50px
+    .navbar-block__link_item
+        font-size: 14px
+    .menu-link
+        margin-right: 25px
+    .sub-menu-list
+        min-width: 135px
+    .sub-sub_menu_list
+        min-width: 135px
+    .news-banner__text_title
+        font-size: 21px
+    .btn_white
+        font-size: 18px
+    .iconostasis__title
+        font-size: 40px
+    .priests__title
+        font-size: 40px
+    .modal-search form input
+        font-size: 36px
+    header
+        padding: 20px
+        position: relative
+    .navbar-block
+        justify-content: flex-end
+        &__link
+            position: absolute
+            left: -100%
+            top: 100%
+            visibility: hidden
+            transition: .5s all 
+            height: 100vh
+            width: 30%
+            background-color: $white
+            z-index: 998
+            ul
+                flex-direction: column
+                width: 100%
+                li
+                    height: auto
+                    width: 100%
+                    margin: 0 
+                    border-bottom: 2px solid #000
+                    a
+                        padding: 20px 
+                        width: 100%
+                        &::after
+                            width: 100%
+                            display: flex
+                            justify-content: flex-end
+            &_active
+                visibility: visible
+                left: 0 
+                overflow-y: scroll
+    .navbar-logo a
+        margin-right: 0
+        min-width: 300px
+    .btn_close
+        display: none
+    .hamburger
+        display: flex
+    .menu-link
+        box-sizing: border-box
+        flex-direction: column
+    .sub-menu-link
+        a
+            color: #000
+            font-weight: 600
+        &:last-child
+            border: none
+    .navbar-block__link_item 
+        box-sizing: border-box
+    .menu-link:hover .sub-menu-list
+        display: none
+    .sub-menu-list_active
+        display: flex !important 
+        position: static
+        background-color: #F0F2F3
+    .menu-link:hover .navbar-block__link_item
+        color: inherit
+    .menu-link:hover .navbar-block__link_item::after
+        transform: none
+        color: inherit
+    .add-menu:hover .add-menu__arrow::after
+        transform: none
+        color: inherit
+    .add-menu:hover .add-menu__arrow::after
+        color: inherit
+    .add-menu:hover .add-menu__arrow
+        color: #000
+    .sub-menu-link a
+        &:hover
+            background-color: transparent
+    .sub-sub_menu_link a:hover
+        background-color: none
+    .sub-sub_menu_list
+        &_active
+            display: flex
+            position: static
+            background-color: #d0d4d6
+    .scroll-close
+        overflow: hidden
+    .sub-menu-link a
+        height: auto
+    .photo-list__block
+        padding: 15px 0
+    .about-us__sidepanel_box
+        flex-direction: column
+    .about-us__sidepanel_box_img
+        margin: 0
+        width: 100%
+    .about-us__sidepanel_box_text
+        text-align: center
+    .about-us__sidepanel_box_date
+        text-align: center
+    .trips-open__sidepanel_box
+        flex-direction: column
+    .trips-open__sidepanel_box_img
+        margin: 0
+        width: 100%
+    .trips-open__sidepanel_box_text
+        text-align: center
+    .trips-open__sidepanel_box_date
+        text-align: center
+    .news-open__sidepanel_box
+        flex-direction: column
+    .news-open__sidepanel_box_img
+        margin: 0
+        width: 100%
+    .news-open__sidepanel_box_text
+        text-align: center
+    .news-open__sidepanel_box_date
+        text-align: center
+    .news-wrapper
+        justify-content: center
+@media (max-width:991px)
+    .news-banner__text
+        margin-right: 40px
+    .iconostasis-block
+        flex-direction: column
+    .iconostasis-block__text
+        margin-bottom: 40px
+    .priests-block
+        flex-wrap: wrap
+    .calendar-block
+        flex-direction: column
+    .iconostasis__subtitle
+        display: block
+        text-align: center
+    .iconostasis__title
+        text-align: center
+    .iconostasis__descr
+        width: 100%
+        text-align: center
+    .footer-bottom
+        flex-wrap: wrap
+        &__block
+            margin-bottom: 30px
+            margin-right: 15px
+    .priests-block__item
+        margin: 0 20px
+    .priests-contact__form
+        width: 100%
+    .priests-contact__form_questions
+        flex-direction: column
+    .priests-contact__form_name label
+        text-align: center
+    .priests-contact__form_input
+        margin: 0 auto
+    .priests-contact__form_name
+        margin-bottom: 30px
+        &:last-child
+            margin: 0
+    .priests-contact__form_messages label
+        text-align: center
+    .about_us-block__icon
+        width: 668px
+    .about-us__block
+        flex-direction: column
+    .about-us__main
+        width: 100%
+    .about-us__sidepanel
+        width: 668px
+        margin: 30px auto 0 auto
+    .about-us__sidepanel_box
+        flex-direction: row
+        align-items: center
+    .about-us__sidepanel_box_img
+        width: 100px
+        margin-right: 15px
+    .about-us__sidepanel_box_text
+        text-align: start
+    .about-us__sidepanel_box_date
+        text-align: start
+    .trips-open-block__icon
+        width: 668px
+    .trips-open__block
+        flex-direction: column
+    .trips-open__main
+        width: 100%
+    .trips-open__sidepanel
+        width: 668px
+        margin: 30px auto 0 auto
+    .trips-open__sidepanel_box
+        flex-direction: row
+        align-items: center
+    .trips-open__sidepanel_box_img
+        width: 100px
+        margin-right: 15px
+    .trips-open__sidepanel_box_text
+        text-align: start
+    .trips-open__sidepanel_box_date
+        text-align: start
+    .news-open-block__icon
+        width: 668px
+    .news-open__block
+        flex-direction: column
+    .news-open__main
+        width: 100%
+    .news-open__sidepanel
+        width: 668px
+        margin: 30px auto 0 auto
+    .news-open__sidepanel_box
+        flex-direction: row
+        align-items: center
+    .news-open__sidepanel_box_img
+        width: 100px
+        margin-right: 15px
+    .news-open__sidepanel_box_text
+        text-align: start
+    .news-open__sidepanel_box_date
+        text-align: start
+    .modal-shop__block
+        width: 60%
+    .news-main__banner
+        flex-direction: column
+        margin: 60px auto 100px auto
+        width: 70%
+    .news-main__banner_photo
+        min-height: 300px
+        width: 100%
+        background: url(../img/Приклад.JPG) center top/cover no-repeat
+    .news-main__banner_descr
+        width: 100%
+    .news__title
+        font-size: 40px
+    .news-main__banner_title a
+        font-size: 30px
+    .our-news-main__banner
+        flex-direction: column
+        margin: 60px auto 100px auto
+        width: 70%
+    .our-news-main__banner_photo
+        min-height: 300px
+        width: 100%
+    .our-news-main__banner_descr
+        width: 100%
+    .our-news__title
+        font-size: 40px
+    .our-news-main__banner_title a
+        font-size: 30px
+    .shop-block
+        flex-direction: column-reverse
+    .shop-main
+        width: 100%
+    .shop-aside
+        width: 100%
+    .shop__title
+        font-size: 40px
+    .shop-open__inf
+        flex-direction: column
+    .shop-open__tabs
+        width: 100%
+    .shop-open__modals
+        width: 100%
+    .footer-bottom__block
+        width: auto
+@media (max-width:767px)
+    .news-banner
+        flex-direction: column
+    .news-banner__text
+        margin: 0 0 40px 0
+        &_title
+            text-align: center
+    .news-banner__btn
+        justify-content: center
+    .priests__text
+        width: 100%
+    .priests-block
+        justify-content: center
+    .navbar-block__link 
+        width: 45%
+    .calendar-table
+        padding: unset
+    .footer-bottom__title
+        font-size: 17px
+    .priests-contact__form_input
+        width: 100%
+    .priests-contact
+        padding: 100px 0
+    .about_us-block__icon
+        height: 400px
+        width: 100%
+    .about-us__sidepanel
+        width: 100%
+    .about-us__subtitle
+        font-size: 40px
+    .about-us__main_title
+        font-size: 35px
+    .trips-open-block__icon
+        height: 400px
+        width: 100%
+    .trips-open__sidepanel
+        width: 100%
+    .trips-open__subtitle
+        font-size: 40px
+    .trips-open__main_title
+        font-size: 35px
+    .news-open-block__icon
+        height: 400px
+        width: 100%
+    .news-open__sidepanel
+        width: 100%
+    .news-open__subtitle
+        font-size: 40px
+    .news-open__main_title
+        font-size: 35px
+    .modal-shop__block
+        width: 100%
+    .modal-search form input
+        font-size: 30px
+    .news-main__banner
+        width: 90%
+    .our-news-main__banner
+        width: 90%
+    .shop-main__inf_item
+        width: 400px
+        margin: 30px auto 0 auto
+        &:first-child
+            margin-top: 0
+    .delievery__photo
+        width: 100%
+    .news-block__item
+        max-width: 350px
+        margin: 0 auto
+    .news__descr
+        margin: 30px 0
+@media (max-width:575px)
+    .container
+        padding: 0 15px
+    header
+        padding: 20px 0
+    .navbar-logo a
+        min-width: 156px
+    .navbar-logo img
+        width: auto
+        height: 27px
+    .navbar-logo__title
+        font-size: 12px
+        margin-left: 13px
+    .navbar-block__other_search i
+        font-size: 17px
+    .navbar-block__other_bag a i
+        font-size: 17px
+    .hamburger
+        margin-left: 25px
+        width: 43px
+        height: 34px
+    .navbar-block__other_search
+        margin: 0 17px
+    .news
+        padding: 60px 0
+    .news-banner__text_title
+        font-size: 13px
+    .btn_white
+        font-size: 13px
+    .news__title
+        font-size: 25px
+        margin-top: 40px
+    .news__descr
+        margin-top: 20px
+        font-size: 15px
+    .iconostasis__subtitle
+        font-size: 15px
+    .iconostasis__title
+        font-size: 25px
+    .iconostasis__descr
+        font-size: 14px
+    .iconostasis-block__icon
+        width: 100%
+    .iconostasis
+        padding: 60px 0
+    .priests
+        padding: 60px 0
+    .priests__subtitle
+        font-size: 15px
+    .priests__title
+        font-size: 25px
+    .priests__text
+        text-align: center
+    .photo-list__link
+        margin-right: 5px
+        margin-left: 5px
+    .navbar-block__link
+        width: 100%
+    .footer-bottom__descr
+        font-size: 12px
+    .footer-bottom__descr a
+        font-size: 12px
+    .footer-bottom__title
+        font-size: 15px
+    .about_us-block__icon
+        height: 293px
+    .trips-block
+        width: 100%
+    .about-us__title
+        font-size: 15px
+    .about-us__subtitle
+        font-size: 25px
+    .about-us__main_title
+        font-size: 23px
+    .about-us__main_subtitle
+        font-size: 23px
+    .about-us__main_quote_text
+        font-size: 13px
+    .about-us
+        padding: 60px 0
+    .trips-open__title
+        font-size: 15px
+    .trips-open__subtitle
+        font-size: 25px
+    .trips-open__main_title
+        font-size: 23px
+    .trips-open__main_subtitle
+        font-size: 23px
+    .trips-open__main_quote_text
+        font-size: 13px
+    .trips-open
+        padding: 60px 0
+    .news-open__title
+        font-size: 15px
+    .news-open__subtitle
+        font-size: 25px
+    .news-open__main_title
+        font-size: 23px
+    .news-open__main_subtitle
+        font-size: 23px
+    .news-open__main_quote_text
+        font-size: 13px
+    .news-open
+        padding: 60px 0
+    .modal-shop__block
+        padding: 40px 20px
+    .modal-shop__list_item
+        padding: 40px 0
+    .modal-shop__list_main img
+        width: 70px
+    .modal-shop__footer_title
+        font-size: 16px
+        span
+            font-size: 20px
+    .modal-shop__btn
+        a
+            padding: 12px 19px
+    .modal-search_close
+        top: 30px
+        right: 30px
+        i
+            font-size: 40px
+    .modal-search form i
+        font-size: 25px
+    .modal-search form input
+        font-size: 25px
+    .news-main__banner
+        width: 100%
+    .news__title_top
+        margin-top: 0
+    .news-main__banner_descr
+        padding: 30px 20px
+    .news-main__banner_title a
+        font-size: 20px
+    .news-main__banner_photo
+        min-height: 180px
+    .news-main__banner_text
+        font-size: 12px
+    .news-main__banner_date
+        font-size: 12px
+    .news-wrapper__item_text
+        padding: 20px 15px
+    .news-wrapper__item_descr
+        font-size: 12px
+    .our-news__title_top
+        margin-top: 0
+    .our-news-main__banner_descr
+        padding: 30px 20px
+    .our-news-main__banner_title a
+        font-size: 20px
+    .our-news-main__banner_photo
+        min-height: 180px
+    .our-news-main__banner_text
+        font-size: 12px
+    .our-news-main__banner_date
+        font-size: 12px
+    .our-news-wrapper__item_text
+        padding: 20px 15px
+    .our-news-wrapper__item_descr
+        font-size: 12px
+    .our-news__subtitle
+        font-size: 22px
+    .our-news__title
+        font-size: 25px
+    .calendar
+        padding: 60px 0
+    .shop-main__inf_item
+        width: 100%
+    .shop-main__inf
+        flex-direction: column
+        justify-content: center
+    .shop__title
+        font-size: 25px
+    .shop-open__img
+        width: 100%
+        img
+            width: 100%
+    .shop-open__modal
+        padding: 30px 20px
+    .shop-open__modal_inputs
+        flex-direction: column
+        input
+            width: 100%
+            margin-bottom: 30px
+            &:last-child
+                margin-bottom: 0
+    .shop-open__comment_main
+        flex-direction: column
+    .news-banner__text_title
+        text-align: center
+        width: 100%
+    .news-main__banner
+        max-width: 350px
+@media (max-width:320px)
+    

@@ -1,0 +1,96 @@
+.priests
+    padding: 100px 0 50px 0
+    &__subtitle
+        display: block
+        font-family: "La Belle Aurore", cursive
+        font-size: 22px
+        font-weight: 600
+        color: $main-color
+        text-align: center
+        margin-bottom: 5px
+    &__title
+        font-family: Open Sans
+        font-size: 50px
+        font-weight: 700
+        color: black
+        text-align: center
+        margin-bottom: 15px
+        span
+            color: $main-color
+    &__text
+        width: 650px
+        font-size: 14px
+        line-height: 1.8
+        margin-bottom: 15px
+        color: $grey
+        font-family: 'Open Sans'
+        margin: 0 auto
+    &__more
+        margin: 50px 0
+    &-block
+        display: flex
+        justify-content: space-between
+        &__item
+            width: 250px
+            background-color: $white
+            border-bottom: 4px solid $main-color
+            &_img
+                overflow: hidden
+                img
+                    width: 100%
+                    transition: .3s all 
+            &_descr
+                text-align: center
+                padding: 20px
+            &_name
+                a  
+                    text-align: center
+                    font-family: Open Sans
+                    font-weight: 700
+                    font-size: 17px
+                    color: #000
+                    transition: .3s
+                    &:hover
+                        color: $main-color
+                        .priests-block__item_img img
+                            transform: scale(1.1)
+            &_who
+                font-family: Open Sans
+                font-weight: 700
+                font-size: 15px
+                text-align: center
+                margin-top: 15px
+                color: $main-color
+
+            &_link
+                margin-top: 15px
+                a   
+                    position: relative
+                    font-family: 'Open Sans'
+                    font-size: 14px
+                    font-weight: 600
+                    color: $grey
+                    &::before
+                        content: ''
+                        position: absolute
+                        width: 100%
+                        bottom: -5px
+                        right: 0
+                        height: 2px
+                        background-color: $main-color
+                        transition: .4s
+                        transform: scaleX(0)
+                    &:hover
+                        color: $main-color
+                        &::before
+                            transform: scaleX(1)
+.priests_photo_1
+    height: 360px
+    width: 100%
+    img
+        width: 100%
+        height: 100%
+.priests-block__item:hover > figure img
+    transform: scale(1.1)
+
+                
